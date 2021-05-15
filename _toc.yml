@@ -1,0 +1,7 @@
+file: README
+sections:
+- file: content
+- file: intro
+- file: markdown
+- file: notebooks
+- file: _build/README
