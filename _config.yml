@@ -39,3 +39,21 @@ launch_buttons:
   jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
   colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
+
+sphinx:
+    config:
+        html_theme: sphinx_book_theme
+
+html_theme_options:
+    repository_url: https://github.com/dorgeln/book
+    repository_branch: main
+    use_repository_button": True
+    use_issues_button": True
+    single_page: True
+    html_title: Dorgeln
+    launch_buttons:
+      binderhub_url: https://mybinder.org
+      thebe: True
+
+extensions:
+  - sphinx_thebe
