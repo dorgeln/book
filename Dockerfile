@@ -1,1 +1,1 @@
-FROM dorgeln/orbiter:alpine-geospatial-0.0.20
+FROM dorgeln/orbiter:micromamba-geospatial-0.0.20

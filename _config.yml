@@ -11,22 +11,6 @@ exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 execute:
   execute_notebooks: off
 
-#######################################################################################
-# Parse and render settings
-parse:
-  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
-    # - amsmath
-    - colon_fence
-    # - deflist
-    - dollarmath
-    # - html_admonition
-    # - html_image
-    - linkify
-    # - replacements
-    # - smartquotes
-    - substitution
-
-  myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -40,26 +24,15 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/dorgeln/book  # Online location of your book
-  path_to_book: /  # Optional path to your book, relative to the repository root
+  path_to_book: ""  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon                   : ""  # A path to a favicon image
-  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  use_repository_button     : true  # Whether to add a link to your repository button
-  use_issues_button         : true  # Whether to add an "open an issue" button
-  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer              : ""  # Will be displayed underneath the footer.
-  google_analytics_id       : ""  # A GA id that can be used to track book views.
-  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
-  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-  comments:
-    hypothesis              : false
-    utterances              : true
+  use_issues_button: true
+  use_repository_button: true
 
-# Launch button settings
 launch_buttons:
   notebook_interface        : jupyterlab  # The interface interactive links will activate ["classic", "jupyterlab"]
   binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
