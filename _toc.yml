@@ -4,4 +4,3 @@ sections:
 - file: intro
 - file: markdown
 - file: notebooks
-- file: _build/README
